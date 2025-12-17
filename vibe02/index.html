@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사과 게임</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>사과 게임</h1>
+        
+        <div class="game-info">
+            <div class="info-item">
+                <span class="label">시간</span>
+                <span class="value" id="timer">30</span>초
+            </div>
+            <div class="info-item">
+                <span class="label">점수</span>
+                <span class="value" id="score">0</span>점
+            </div>
+        </div>
+
+        <div class="game-wrapper">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+
+        <div class="controls">
+            <button id="resetBtn" class="btn">게임 재시작</button>
+        </div>
+
+        <div id="gameOverScreen" class="game-over-screen hidden">
+            <div class="game-over-content">
+                <h2>게임 오버!</h2>
+                <div class="final-score">
+                    <p>최종 점수</p>
+                    <p class="score-value" id="finalScore">0</p>
+                </div>
+                <button id="restartBtn" class="btn btn-primary">다시 시작</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

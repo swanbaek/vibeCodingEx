@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #1d1d1f;
+}
+
+.game-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.label {
+    font-weight: 600;
+    color: #666;
+}
+
+.value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #667eea;
+    min-width: 40px;
+    text-align: right;
+}
+
+.game-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    border: 3px solid #e5e5e7;
+    border-radius: 10px;
+    padding: 10px;
+    background: #f9f9fb;
+}
+
+#gameCanvas {
+    display: block;
+    border: 2px solid #d2d2d7;
+    border-radius: 8px;
+    background: #ffffff;
+    cursor: crosshair;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #f5f5f7;
+    color: #1d1d1f;
+}
+
+.btn:hover {
+    background: #e5e5e7;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-primary {
+    background: #667eea;
+    color: white;
+    font-size: 18px;
+    padding: 16px 40px;
+}
+
+.btn-primary:hover {
+    background: #5568d3;
+}
+
+/* Game Over Screen */
+.game-over-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.game-over-screen.hidden {
+    display: none;
+}
+
+.game-over-content {
+    background: white;
+    border-radius: 20px;
+    padding: 50px 40px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.4s ease;
+}
+
+.game-over-content h2 {
+    font-size: 36px;
+    color: #1d1d1f;
+    margin-bottom: 30px;
+}
+
+.final-score {
+    background: #f5f5f7;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.final-score p:first-child {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.score-value {
+    font-size: 48px;
+    font-weight: bold;
+    color: #667eea;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .game-info {
+        gap: 30px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .value {
+        font-size: 20px;
+    }
+
+    .game-over-content {
+        padding: 30px 20px;
+    }
+
+    .game-over-content h2 {
+        font-size: 28px;
+    }
+
+    .score-value {
+        font-size: 36px;
+    }
+}
