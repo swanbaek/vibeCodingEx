@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* 콘텐츠 영역 */
+.content {
+  padding: 0 64px;
+}
+
+/* 탭 스타일 */
+.tabs {
+  display: flex;
+  gap: 32px;
+  border-bottom: 1px solid #272727;
+  margin-bottom: 32px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: #aaaaaa;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 0;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.tab:hover {
+  color: white;
+}
+
+.tab.active {
+  color: white;
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: white;
+}
+
+/* 비디오 그리드 */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px 16px;
+  margin-bottom: 48px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1024px) {
+  .content {
+    padding: 0 32px;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 0 16px;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px 12px;
+  }
+
+  .tabs {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
