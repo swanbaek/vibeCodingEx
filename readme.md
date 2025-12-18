@@ -37,14 +37,21 @@
 - 사용 기술: React (Create React App)
 - 컴포넌트 구조화, 상태 관리, 실제 React 프로젝트 구조 이해
 
+
+### 🔹 vibe05
+- vibe05 - 인스타그램 클론한 Lifegram UI및 기능 만들기(좋아요,북마크,댓글, 스토리 기능)
+- 사용 기술: React (Create React App)
+- 컴포넌트 구조화, 상태 관리, 실제 React 프로젝트 구조 이해
+
 ---
 
 ## ✨ 목적
 
+
 - 프런트엔드 기초부터 React까지 단계적으로 학습
 - 실습 중심의 프로젝트를 통해 웹 개발 흐름 이해
 - HTML/CSS/JavaScript → React로 이어지는 자연스러운 학습 곡선 구성
-
+---
 ## 📚 참고 도서
 
 \- [참고도서] **요즘 바이브 코딩 깃허브 코파일럿 31가지 프로그램 만들기** 박현규 저| 골든래빗\([https://www.yes24.com/product/goods/167428992](https://www.yes24.com/product/goods/167428992))
