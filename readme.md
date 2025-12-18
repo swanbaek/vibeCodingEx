@@ -39,9 +39,10 @@
 
 
 ### 🔹 vibe05
-- vibe05 - 인스타그램 클론한 Lifegram UI및 기능 만들기(좋아요,북마크,댓글, 스토리 기능)
+- **vibe05 - 인스타그램 클론한 Lifegram UI및 기능 만들기**
+- [좋아요,북마크,댓글, 스토리 기능] 
 - 사용 기술: React (Create React App)
-- 컴포넌트 구조화, 상태 관리, 실제 React 프로젝트 구조 이해
+- LocalStorage사용 북마크/좋아요/테마(Light,Dark) 기능 포함시키기
 
 ---
 
