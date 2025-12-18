@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Cushion</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #1d1d1f;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            height: 44px;
+            border-bottom: 1px solid #d2d2d7;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        nav li {
+            margin: 0 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #1d1d1f;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: space-around;
+        }
+        .hamburger {
+            display: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            color: #6a0dad;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-image: url('carousel_images/imgi_43_23020002-pc.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(245, 245, 247, 0.5);
+        }
+        .hero h1, .hero p, .hero a {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .hero a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #6a0dad;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .endless-section {
+            background-image: url('carousel_images/imgi_275_100048-pc.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto 20px;
+        }
+        .endless-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(245, 245, 247, 0.5);
+        }
+        .endless-section h2, .endless-section p {
+            position: relative;
+            z-index: 1;
+        }
+        .more-section {
+            background-image: url('carousel_images/imgi_204_23080001-pc.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .more-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(245, 245, 247, 0.5);
+        }
+        .more-section h2, .more-section p {
+            position: relative;
+            z-index: 1;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .product {
+            background: #f5f5f7;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .product h3 {
+            font-size: 1.5em;
+        }
+        .product p {
+            font-size: 1em;
+        }
+        .product a:first-of-type {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 16px;
+            background: #ba55d3;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+        .product a:last-of-type {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 16px;
+            background: #dc3545;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+        footer {
+            background: #f5f5f7;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #0071e3;
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero {
+                padding: 80px 20px;
+            }
+            .hamburger {
+                display: block;
+            }
+            nav{
+                position: relative;
+            }
+            nav ul {
+                display: none;
+                padding: 0;
+            }
+            #menu-toggle:checked ~ ul {
+                display: block;
+                position: absolute;
+                top: 100%;
+                margin-top: 3px;
+                right: 0;
+                background: white;
+                width: 180px;
+                border: 1px solid #d2d2d7;
+                /* border-top: none; */
+                z-index: 10;
+            }
+            nav ul li {
+                display: block;
+                margin: 0;
+                padding-left: 10px;
+                border-left: 1px solid #d2d2d7;
+                border-right: 1px solid #d2d2d7;
+                                
+            }
+            nav ul li:not(:last-child) {
+                border-bottom: 1px solid #d2d2d7;
+            }
+            nav ul li a {
+                display: block;
+                padding: 10px 0;
+                text-decoration: none;
+            }
+            .logo {
+                background-image: url('logo.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                text-indent: -9999px;
+                width: 156px;
+                height: 47px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero {
+                padding: 80px 20px;
+            }
+            .section {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Natural Cosmetic</div>
+        <nav>
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+            <label for="menu-toggle" class="hamburger">☰</label>
+            <ul>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Comfort</a></li>
+                <li><a href="#">Sofa</a></li>
+                <li><a href="#">Pillow</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Comfort Cushion</h1>
+        <p>Say hello to the latest generation of Comfort Cushion.</p>
+        <a href="#">Learn more</a>
+        <a href="#">Shop Comfort Cushion</a>
+    </section>
+
+    <section class="section">
+        <h2>Give something special.</h2>
+        <p>Find what they’ve been waiting for all year.</p>
+        <a href="#" style="background: #6a0dad; color: white; padding: 10px 20px; text-decoration: none; border-radius: 20px;">Shop gifts</a>
+    </section>
+
+    <section class="section">
+        <div class="products">
+            <div class="product">
+                <img src="imgi_16_agerholiday.jpg" alt="Sofa Cushion">
+                <h3>Sofa Cushion</h3>
+                <p>Now supercharged by the ultimate comfort.</p>
+                <a href="#">Learn more</a>
+                <a href="#">Buy</a>
+            </div>
+            <div class="product">
+                <img src="imgi_19_251215_seongsupop.jpg" alt="Pillow Cushion">
+                <h3>Pillow Cushion</h3>
+                <p>The world’s best in-ear comfort.</p>
+                <a href="#">Learn more</a>
+                <a href="#">Buy</a>
+            </div>
+            <div class="product">
+                <img src="imgi_17_vroller_1215.jpg" alt="Chair Cushion">
+                <h3>Chair Cushion</h3>
+                <p>The ultimate way to sit comfortably.</p>
+                <a href="#">Learn more</a>
+                <a href="#">Buy</a>
+            </div>
+            <div class="product">
+                <img src="imgi_20_251208_capsule.jpg" alt="Bed Cushion">
+                <h3>Bed Cushion</h3>
+                <p>Now with the softness and double the comfort.</p>
+                <a href="#">Learn more</a>
+                <a href="#">Buy</a>
+            </div>
+            <div class="product">
+                <img src="imgi_21_251208_jellymist.jpg" alt="Floor Cushion">
+                <h3>Floor Cushion</h3>
+                <p>Sky blue color. Sky high comfort.</p>
+                <a href="#">Learn more</a>
+                <a href="#">Buy</a>
+            </div>
+            <div class="product">
+                <img src="imgi_18_pop_pro_251202_1.jpg" alt="Car Cushion">
+                <h3>Car Cushion</h3>
+                <p>Get up to 3% Daily Comfort back with every purchase.</p>
+                <a href="#">Learn more</a>
+                <a href="#">Buy</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section endless-section">
+        <h2>Endless comfort.</h2>
+        <p>Relax with our cushion collection.</p>
+    </section>
+
+    <section class="section more-section">
+        <h2>More from Apple Cushion.</h2>
+        <p>Watch the latest comfort films.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Apple Cushion Inc. All rights reserved.</p>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Site Map</a>
+    </footer>
+</body>
+</html>
