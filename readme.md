@@ -47,7 +47,7 @@
 
 ## 📚 참고 도서
 
-\- [바이브코딩- 깃헙코파일럿 참고도서]\([https://www.yes24.com/product/goods/167428992](https://www.yes24.com/product/goods/167428992))
+\- [참고도서] **요즘 바이브 코딩 깃허브 코파일럿 31가지 프로그램 만들기** 박현규 저| 골든래빗\([https://www.yes24.com/product/goods/167428992](https://www.yes24.com/product/goods/167428992))
 
 
 ---
