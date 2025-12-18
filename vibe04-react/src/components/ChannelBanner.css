@@ -1,0 +1,84 @@
+.channel-banner {
+    background-color: #0f0f0f;
+    margin-bottom: 24px;
+}
+
+.banner-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.channel-info {
+    display: flex;
+    align-items: center;
+    padding: 24px 64px;
+    gap: 24px;
+}
+
+.channel-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.channel-details {
+    flex: 1;
+}
+
+.channel-name {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.channel-stats {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.subscribe-btn {
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.subscribe-btn:hover {
+    background-color: #e00000;
+}
+
+@media (max-width: 1024px) {
+    .channel-info {
+        padding: 24px 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .channel-info {
+        padding: 16px;
+        flex-wrap: wrap;
+    }
+
+    .channel-avatar {
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+    }
+
+    .channel-name {
+        font-size: 24px;
+    }
+}

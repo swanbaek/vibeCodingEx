@@ -1,0 +1,11 @@
+각 유튜브 섬네일을 누르면 유튜브 영상으로 이동할 수 있도록 다음 URL을 사용해줘.
+첫 번째 강의 : https://www.youtube.com/watch?v=NTxvB6zFh0Q&list=PLruehM1HUSC-6ojdXMUIpIGhuP7ajp9m6&index=16&pp=iAQB
+__두 번째 강의 : https://www.youtube.com/watch?v=2Or4ciaoZns&list=PLruehM1HUSC-6ojdXMUIpIGhuP7ajp9m6&index=15&pp=iAQB
+세 번째 강의 : https://www.youtube.com/watch?v=PCcfVk6t72Y&list=PLruehM1HUSC-6ojdXMUIpIGhuP7ajp9m6&index=14&pp=iAQB
+네 번째 강의 : https://www.youtube.com/watch?v=tfoFpnQB0vg&list=PLruehM1HUSC-6ojdXMUIpIGhuP7ajp9m6&index=13&pp=iAQB
+다섯 번째 강의 : https://www.youtube.com/watch?v=19NFGrC-eIE&list=PLruehM1HUSC-6ojdXMUIpIGhuP7ajp9m6&index=12&pp=iAQB
+여섯 번째 강의 : https://www.youtube.com/watch?v=m7fKeI7T_rI&list=PLruehM1HUSC-6ojdXMUIpIGhuP7ajp9m6&index=11&pp=iAQB
+일곱 번째 강의 : https://www.youtube.com/watch?v=kluaf2kpRFg&list=PLruehM1HUSC-6ojdXMUIpIGhuP7ajp9m6&index=10&pp=iAQB
+여덟 번째 강의 : https://www.youtube.com/watch?v=KPeGpCb0gqo&list=PLruehM1HUSC-6ojdXMUIpIGhuP7ajp9m6&index=9&pp=iAQB0gcJCQMKAYcqIYzv
+아홉 번째 강의 : https://www.youtube.com/watch?v=FG65trEdlKg&list=PLruehM1HUSC-6ojdXMUIpIGhuP7ajp9m6&index=8&pp=iAQB
+열 번째 강의 : https://www.youtube.com/watch?v=-Uy_ciFJkVQ&list=PLruehM1HUSC-6ojdXMUIpIGhuP7ajp9m6&index=7&pp=iAQB
