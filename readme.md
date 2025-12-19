@@ -47,21 +47,45 @@
 - Live Demo
 -- https://lifegram.vercel.app/
 
+
+### 🔹 vibe06 (Frontend)
+- **메모 앱 프런트엔드 구현**
+- 사용 기술: React
+- 주요 기능
+  - 회원가입 / 로그인 UI
+  - JWT 기반 인증 흐름 처리
+  - 메모 생성 / 삭제 UI
+  - 카드(Grid) 기반 레이아웃 구성
+- 프런트엔드에서 API 연동 및 상태 흐름 이해
+
+### 🔹 vibe06-api (Backend)
+- **메모 앱 백엔드 API 서버**
+- 사용 기술: Node.js, Express, Prisma, SQLite
+- 주요 기능
+  - 회원가입 / 로그인 API
+  - JWT 인증 처리
+  - 메모 CRUD API
+  - Prisma ORM 기반 DB 설계 및 연동
+- Frontend(vibe06)와 분리된 API 서버 구조 이해
+- 추후 Supabase(PostgreSQL)로 확장 예정
+
 ---
 
 ## ✨ 목적
 
-
 - 프런트엔드 기초부터 React까지 단계적으로 학습
 - 실습 중심의 프로젝트를 통해 웹 개발 흐름 이해
-- HTML/CSS/JavaScript → React로 이어지는 자연스러운 학습 곡선 구성
+- HTML/CSS/JavaScript → React → Frontend + Backend 분리 구조 학습
+- 실제 서비스와 유사한 인증·데이터 흐름 경험
+
 ---
+
 ## 📚 참고 도서
 
-\- [참고도서] **요즘 바이브 코딩 깃허브 코파일럿 31가지 프로그램 만들기** 박현규 저| 골든래빗\([https://www.yes24.com/product/goods/167428992](https://www.yes24.com/product/goods/167428992))
-
+- **요즘 바이브 코딩 깃허브 코파일럿 31가지 프로그램 만들기**  
+  박현규 저 | 골든래빗  
+  https://www.yes24.com/product/goods/167428992
 
 ---
 
-이 저장소는 학습 기록 및 학습내용 정리를 위한 용도로 지속적으로 업데이트됩니다.
-
+이 저장소는 학습 기록 및 학습 내용 정리를 위한 용도로 지속적으로 업데이트됩니다.
