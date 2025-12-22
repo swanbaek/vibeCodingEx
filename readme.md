@@ -70,6 +70,29 @@
 - 추후 Supabase(PostgreSQL)로 확장 예정
 
 ---
+### 🔹 vibe07
+- **금 시세 크롤링 및 분석**
+- [웹 크롤링 → 엑셀 저장 → 통계 → 시각화]  
+- 사용 기술: Python, Pandas, OpenPyXL, Matplotlib / Seaborn
+- 주요 기능
+  - 한국금거래소 사이트에서 1년치 금 시세 데이터 수집
+  - 엑셀 파일(`.xlsx`)로 데이터 저장
+  - 평균, 최대/최소값, 중앙값, 표준편차 등 통계 계산
+  - 라인차트, 히스토그램, 박스플롯 등 시각화 이미지 생성
+- 학습 포인트
+  - 웹 크롤링 실습
+  - 엑셀 데이터 처리 및 통계 분석
+  - 시각화 차트 생성 및 이미지 저장
+- 결과물 예시
+  - Excel 파일: `gold_price_1year_with_stats_20251222.xlsx`
+  - 시각화 이미지: 
+    - gold_price_timeseries.png - 시계열 추이
+    - gold_price_boxplot.png - 박스플롯
+    - gold_price_histogram.png - 히스토그램
+    - gold_price_statistics_bar.png - 통계 요약
+    - gold_price_monthly_average.png - 월별 평균
+    - gold_price_correlation.png - 상관관계 히트맵
+---
 
 ## ✨ 목적
 
